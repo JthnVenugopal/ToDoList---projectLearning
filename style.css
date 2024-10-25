@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(to bottom right, #000000, #0000FF); /* Blue and black gradient */
+  color: #fff; /* Sets the text color to white for better contrast */
+  font-family: 'Arial', sans-serif; /* Changes the font family */
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+  border-radius: 10px; /* Rounds the corners of the container */
+  padding: 20px; /* Adds padding inside the container */
+  margin-top: 50px; /* Adds margin at the top */
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 2.5rem; /* Increases the font size of the heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow effect to the heading */
+}
+
+.input-group {
+  margin-bottom: 20px; /* Adds space below the input group */
+}
+
+.paragraph-styling {
+  flex: 1; /* Allows the paragraph to take up available space */
+  margin: 0 10px; /* Adds margin around the paragraph */
+  font-size: 1.2rem; /* Increases font size for tasks */
+}
+
+.task-item {
+  display: flex; /* Aligns checkbox and paragraph in a row */
+  align-items: center; /* Centers items vertically */
+  padding: 10px; /* Adds padding around each task item */
+  border-radius: 5px; /* Rounds the corners of each task item */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background for tasks */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.task-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Changes background on hover */
+}
+
+input[type="checkbox"] {
+  width: 24px; /* Increase the width of the checkbox */
+  height: 24px; /* Increase the height of the checkbox */
+  margin-right: 10px; /* Space between checkbox and text */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Custom checkbox styling */
+input[type="checkbox"]:checked::after {
+  content: "✓"; /* Checkmark symbol */
+  font-size: 20px; /* Adjust checkmark size */
+  color: green; /* Checkmark color */
+  position: absolute; /* Positioning for checkmark */
+  left: 4px; /* Adjust position */
+  top: 2px; /* Adjust position */
+}
+
+input[type="checkbox"]:checked {
+  background-color: transparent; /* Remove default background */
+  border: 2px solid green; /* Add border when checked */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Bootstrap danger button background color */
+  color: #fff; /* Bootstrap danger button text color */
+  border: none; /* Remove border */
+  padding: 5px 10px; /* Add padding */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Bootstrap danger button hover background color */
+}
